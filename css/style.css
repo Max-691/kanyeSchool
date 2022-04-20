@@ -1,0 +1,5 @@
+*{box-sizing: border-box;}
+/*GLOBAL*/
+html{font-size: 62.5%;}
+ul{list-style: none; padding: 0;}
+a{text-decoration: none;}
