@@ -1,5 +1,39 @@
 *{box-sizing: border-box;}
 /*GLOBAL*/
 html{font-size: 62.5%;}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
 ul{list-style: none; padding: 0;}
 a{text-decoration: none;}
+
+main{
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+header{
+    background: #B3D4FB;
+    padding: 2rem;
+    text-align: center;
+}
+button#add{
+    margin-top: 2rem;
+}
+h1, h2{
+    margin: 0;
+}
+
+footer{
+    background: #B3D4FB;
+    color: black;
+
+}
+.liborder{
+    font-size: 2rem;
+    font-family:'Courier New', Courier, monospace;
+    border: solid 3px white;
+    margin-top: 2rem;
+}
