@@ -9,6 +9,24 @@ addButton.addEventListener("click", function(){
         ul.appendChild(li);
         li.textContent= data.quote;
         li.classList.add('liborder')
+        //add of up/down buttons
+        const upButton = document.createElement('button');
+        li.appendChild(upButton)
+        upButton.classList.add('button_style')
+        upButton.textContent="UP";
+        upButton.addEventListener("click", function(){
+            const previousNode = li.previousElementSibling;
+            previousNode.insertAdjacentElement("beforebegin", li);
+        })
+
+        const downButton = document.createElement('button');
+        li.appendChild(downButton)
+        downButton.classList.add('button_style')
+        downButton.textContent="DOWN";
+        downButton.addEventListener("click", function(){
+        const nextNode = li.nextElementSibling;
+        nextNode.insertAdjacentElement('afterend', li)
+        })
     })
     .catch(err => {console.log('Request Failed:', err)})
     
